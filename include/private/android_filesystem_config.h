@@ -75,6 +75,7 @@
 #define AID_NET_ADMIN     3005  /* can configure interfaces and routing tables. */
 #define AID_NET_BW_STATS  3006  /* read bandwidth statistics */
 #define AID_NET_BW_ACCT   3007  /* change bandwidth statistics accounting */
+#define AID_NET_BIND_SERVICE 3009 /* bind to ports under 1024 */
 
 #define AID_MISC          9998  /* access to misc storage */
 #define AID_NOBODY        9999
@@ -123,6 +124,7 @@ static const struct android_id_info android_ids[] = {
     { "inet",      AID_INET, },
     { "net_raw",   AID_NET_RAW, },
     { "net_admin", AID_NET_ADMIN, },
+    { "net_bind_service", AID_NET_BIND_SERVICE, },
     { "net_bw_stats", AID_NET_BW_STATS, },
     { "net_bw_acct", AID_NET_BW_ACCT, },
     { "misc",      AID_MISC, },
